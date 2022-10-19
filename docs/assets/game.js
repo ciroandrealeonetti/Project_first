@@ -125,4 +125,4 @@ class Game {
             
       }
       const lifeImage = new Image();
-      lifeImage.src="/docs/assets/images/icons8-salami-pizza-48.png"
+      lifeImage.src="docs/assets/images/icons8-salami-pizza-48.png"
