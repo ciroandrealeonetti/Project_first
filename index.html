@@ -9,15 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza Game</title>
-    <style>
-        body{
-             background-image: url("docs/assets/images/Pintado\ A\ Mano\ De\ Deliciosa\ Pizza\ Folleto\ Cartel\ Material\ De\ Antecedentes.jpeg") ;
-             background-size: cover;
-        }
-        canvas{
-            margin-left: 31rem;
-        }
-    </style>
+    
 </head>
 <body>
 
@@ -27,8 +19,20 @@
 </div>
 
 <div id="game-board">
+
+<div id="instructions">
+    <div id="bgcolor">
+<h2>Instructions</h2>
+<ul>
+    <li>catch two slices of pepperoni pizza</li>
+    <li>avoid pineapple pizza</li>
+</ul>
+</div>
+</div>
+
         <canvas id="canvas" width="900px" height="700px"style=""></canvas>
-      </div>
+      
+    </div>
 
       <script type="text/javascript" src="docs/assets/player.js"></script>
       <script type="text/javascript" src="docs/assets/obstacles.js"></script>

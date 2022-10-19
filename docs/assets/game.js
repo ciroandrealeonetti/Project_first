@@ -84,15 +84,25 @@ class Game {
                     }
                     return this.player.crashWith(obstacle)
                 })
+                
+                if (this.lifes === 2){
+                    this.ctx.drawImage(lifeImage, 10, 0, 70, 70)
+                    this.ctx.drawImage(lifeImage, 90, 0, 70, 70)
+                } else if ( this.lifes === 1){
+                    this.ctx.drawImage(lifeImage, 10, 0, 70, 70)
+                } else if (this.lifes === 0){
+                    this.ctx.clearRect(0, 0, 290, 70)
+                    this.stop()
+                    setTimeout(()=>{
+                        alert("YOU LOSE!!")
+                    }, 100)
+                    
+                }
 
                 if(crashed){
                     this.lifes--
                 }
 
-                if(this.lifes <= 0){
-                    this.stop()
-                    alert("YOU LOSE!!")
-                } 
             }
             checkBonusCollision(){
                 const crashed = this.bonus.some((bonus, i) => {
@@ -112,5 +122,7 @@ class Game {
             }
 
             
+            
       }
-   
+      const lifeImage = new Image();
+      lifeImage.src="/docs/assets/images/icons8-salami-pizza-48.png"

@@ -21,6 +21,45 @@ h1 {
 body{
     margin: 0px;
     padding: 0px;
+    background-image: url("/docs/assets/images/Pintado A Mano De Deliciosa Pizza Folleto Cartel Material De Antecedentes.jpeg") ;
+    background-size: cover;
 }
 
 
+/* canvas{
+   margin-left: 31rem;
+} */
+
+#instructions{
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Steinfeld', sans-serif;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 0px 0px 0px 20px;
+    
+}
+#game-board{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#bgcolor{
+    background-color: lightsalmon;
+    padding: 0px 10px;
+
+}
+h2{
+    margin-bottom: 0px;
+}
+
+ul{
+    margin-top: 0px;
+    padding: 10px;
+}
