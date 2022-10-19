@@ -9,7 +9,7 @@ window.onload = () => {
   };
 
     function startGame() {
-      const player = new Player(800, 300, 100, 100, ctx, "blue");
+      const player = new Player(800, 300, 100, 100, ctx,);
       let game = new Game(ctx, 900, 700, player)
       game.start();
     

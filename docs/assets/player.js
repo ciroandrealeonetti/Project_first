@@ -41,7 +41,7 @@ class Player {
     } */
 
     draw() {
-        this.image.src = "/docs/assets/images/Homer Simpson PNG image with transparent background.png"
+        this.image.src = "docs/assets/images/Homer Simpson PNG image with transparent background.png"
         //this.ctx.fillStyle = this.color;
         this.ctx.drawImage(this.image,this.x, this.y, this.w, this.h);
 

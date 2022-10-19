@@ -22,7 +22,8 @@ class Game {
     clear() {
         this.ctx.clearRect(0, 0, this.width, this.height);
     }
-
+    
+    //score()
     
      update = () => {
         this.frames++;
@@ -53,7 +54,7 @@ class Game {
 
         if (this.frames % 240 === 0) {
             let randomY = Math.floor(Math.random()* 700)
-            this.obstacles.push(new Obstacle("/docs/assets/images/pineapple pizza.png",100,randomY,40,40,this.ctx));
+            this.obstacles.push(new Obstacle("docs/assets/images/pineapple pizza.png",100,randomY,50,50,this.ctx));
         }
     
         }
@@ -70,7 +71,7 @@ class Game {
             }
             if (this.frames % 120 === 0) {
                 let randomY = Math.floor(Math.random()* 700)
-                this.bonus.push(new Obstacle("/docs/assets/images/icons8-salami-pizza-48.png",300,randomY,40,40,this.ctx));
+                this.bonus.push(new Obstacle("docs/assets/images/icons8-salami-pizza-48.png",300,randomY,50,50,this.ctx));
                
             }
         
