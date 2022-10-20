@@ -6,6 +6,7 @@ window.onload = () => {
     document.getElementById('start-button').onclick = () => {
       console.log('game says brrrrr')
         startGame();
+        mySound.play()
   };
 
     function startGame() {

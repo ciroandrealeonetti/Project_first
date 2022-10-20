@@ -17,6 +17,7 @@ class Game {
     }
     stop(){
         clearInterval(this.intervalId)
+        mySound.pause()
     }
 
     clear() {
@@ -126,3 +127,5 @@ class Game {
       }
       const lifeImage = new Image();
       lifeImage.src="docs/assets/images/icons8-salami-pizza-48.png"
+
+      let mySound = new Audio('docs/assets/sounds/36897cbc-b475-cbb9-7494-3f0d382fe949_web.mp3')
